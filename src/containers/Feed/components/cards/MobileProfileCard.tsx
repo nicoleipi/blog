@@ -67,7 +67,7 @@ const MobileProfileCard: React.FC<Props> = () => {
               target="_blank"
               className="  overflow-hidden p-3 dark:hover:bg-zinc-700 rounded-2xl cursor-pointer text-gray-500 dark:text-white"
             >
-              <AiFillGoodreads className="text-2xl flex-shrink-0" />
+              <AiOutlineRead className="text-2xl flex-shrink-0" />
             </a>
           )}
         </div> */}
