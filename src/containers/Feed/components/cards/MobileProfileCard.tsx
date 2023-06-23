@@ -60,14 +60,14 @@ const MobileProfileCard: React.FC<Props> = () => {
               <AiOutlineMail className="text-2xl flex-shrink-0" />
             </a>
           )}
-          {CONFIG.profile.linkedin && (
+          {CONFIG.profile.goodreads&& (
             <a
-              href={`https://www.linkedin.com/in/${CONFIG.profile.linkedin}`}
+              href={`https://www.goodreads.com/${CONFIG.profile.goodreads}`}
               rel="noreferrer"
               target="_blank"
               className="  overflow-hidden p-3 dark:hover:bg-zinc-700 rounded-2xl cursor-pointer text-gray-500 dark:text-white"
             >
-              <AiFillLinkedin className="text-2xl flex-shrink-0" />
+              <AiFillGoodreads className="text-2xl flex-shrink-0" />
             </a>
           )}
         </div> */}
