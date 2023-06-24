@@ -4,7 +4,7 @@ export const COLOR_SET: { [key: string]: string } = {
   1: "bg-rose-200",
   2: "bg-fuchsia-200",
   3: "bg-violet-200",
-  4: "bg-blue-200",
+  4: "bg-zinc-700-200",
   5: "bg-teal-100",
   6: "bg-green-200",
   7: "bg-yellow-100",
