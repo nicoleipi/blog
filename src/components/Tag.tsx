@@ -7,7 +7,7 @@ type Props = {
   category_id: number
 }
 
-const Tag: React.FC<Props> = ({ children, tag_id, category_id }) => {
+const Tag: React.FC<Props> = ({ children, tag_id }) => {
   const router = useRouter()
   const handleClick = (value: string) => {
     router.push(`/?tag=${value}`)
@@ -23,6 +23,26 @@ const Tag: React.FC<Props> = ({ children, tag_id, category_id }) => {
     "bg-pink-200",
   ]
 
+  return (
+    <div
+      onClick={() => handleClick(children)}
+      className={`text-xs text-gray-800 font-normal rounded-full ${
+        arrayOfColors[tag_id % arrayOfColors.length]
+      } px-2 py-1 cursor-pointer`}
+    >
+      {children}
+    </div>
+  )
+}
+
+export default Tag
+
+const Cat_Tag: React.FC<Props> = ({ children, category_id }) => {
+  const router = useRouter()
+  const handleClick = (value: string) => {
+    router.push(`/?tag=${value}`)
+  }
+
   let arrayOfDarkerColors = [
     "bg-red-400",
     "bg-yellow-400",
@@ -37,7 +57,6 @@ const Tag: React.FC<Props> = ({ children, tag_id, category_id }) => {
     <div
       onClick={() => handleClick(children)}
       className={`text-xs text-gray-800 font-normal rounded-full ${
-        arrayOfColors[tag_id % arrayOfColors.length]
         arrayOfDarkerColors[category_id % arrayOfDarkerColors.length]
       } px-2 py-1 cursor-pointer`}
     >
@@ -46,4 +65,4 @@ const Tag: React.FC<Props> = ({ children, tag_id, category_id }) => {
   )
 }
 
-export default Tag
+export default Cat_Tag
