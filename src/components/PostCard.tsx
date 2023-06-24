@@ -72,7 +72,7 @@ const PostCard: React.FC<Props> = ({ data }) => {
               </div>
             </div>
             <div className="mb-4">
-              <p className="hidden md:block leading-8 text-gray-700 dark:text-gray-300">
+              <p className="hidden md:block leading-3 text-gray-700 dark:text-gray-300">
                 {data.summary}
               </p>
             </div>
