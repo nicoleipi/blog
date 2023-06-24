@@ -38,6 +38,8 @@ class MyDocument extends Document {
         </Head>
         <body className="bg-slate-100 dark:bg-black">
           <Main />
+          --tw-bg-opacity: 1;
+          background-color: blue;
           <NextScript />
         </body>
       </Html>
