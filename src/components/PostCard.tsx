@@ -79,7 +79,7 @@ const PostCard: React.FC<Props> = ({ data }) => {
             <div className="flex gap-2">
               {data.tags &&
                 data.tags.map((tag: string, idx: number) => (
-                  <Tag tag_id={idx}>{tag}</Tag>
+                  <Tag key={idx} tag_id={idx}>{tag}</Tag>
                 ))}
             </div>
           </div>
