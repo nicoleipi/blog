@@ -44,7 +44,7 @@ const PostHeader: React.FC<Props> = ({ data }) => {
             {data.tags && (
               <div className="flex flex-nowrap max-w-full overflow-x-auto article-tags gap-2">
                 {data.tags.map((tag: string, idx:number) => (
-                  <Cat_Tag key={idx} category_id={idx}>{tag}</Cat_Tag>
+                  <Cat_Tag key={idx} tag_id={idx}>{tag}</Cat_Tag>
                 ))}
               </div>
             )}

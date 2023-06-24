@@ -4,7 +4,6 @@ import React from "react"
 type Props = {
   children: string
   tag_id: number
-  category_id: number
 }
 
 const Tag: React.FC<Props> = ({ children, tag_id }) => {
@@ -37,7 +36,7 @@ const Tag: React.FC<Props> = ({ children, tag_id }) => {
 
 export default Tag
 
-const Cat_Tag: React.FC<Props> = ({ children, category_id }) => {
+const Cat_Tag: React.FC<Props> = ({ children, tag_id }) => {
   const router = useRouter()
   const handleClick = (value: string) => {
     router.push(`/?tag=${value}`)
@@ -57,7 +56,7 @@ const Cat_Tag: React.FC<Props> = ({ children, category_id }) => {
     <div
       onClick={() => handleClick(children)}
       className={`text-xs text-gray-800 font-normal rounded-full ${
-        arrayOfDarkerColors[category_id % arrayOfDarkerColors.length]
+        arrayOfDarkerColors[tag_id % arrayOfDarkerColors.length]
       } px-2 py-1 cursor-pointer`}
     >
       {children}
