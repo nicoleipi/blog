@@ -71,8 +71,9 @@ const PostCard: React.FC<Props> = ({ data }) => {
                 )}
               </div>
             </div>
+            <Tag tag_id={idx}>{tag}</Tag>
             <div className="mb-4">
-              <p className="hidden md:block leading-3 text-gray-700 dark:text-gray-300">
+              <p className="hidden md:block leading-4 text-gray-700 dark:text-gray-300">
                 {data.summary}
               </p>
             </div>

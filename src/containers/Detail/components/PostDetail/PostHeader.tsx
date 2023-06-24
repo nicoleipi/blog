@@ -46,6 +46,9 @@ const PostHeader: React.FC<Props> = ({ data }) => {
                 {data.tags.map((tag: string) => (
                   <Tag key={tag}>{tag}</Tag>
                 ))}
+                {data.tags.map((tag: string, idx:number) => (
+                  <Tag key={idx} tag_id={idx}>{tag}</Tag>
+                ))}
               </div>
             )}
           </div>
