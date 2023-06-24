@@ -26,7 +26,7 @@ const PostCard: React.FC<Props> = ({ data }) => {
             </Category>
           )}
           {data.thumbnail && (
-            <div className="relative w-full pb-[66%] lg:pb-[50%] bg-gray-200 dark:bg-zinc-700 ">
+            <div className="relative w-full pb-[66%] lg:pb-[50%] bg-gray-200 dark:bg-blue ">
               <Image
                 src={data.thumbnail}
                 className="object-cover"
