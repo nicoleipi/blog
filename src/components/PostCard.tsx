@@ -4,8 +4,7 @@ import { formatDate } from "@/src/libs/utils"
 import Tag from "./Tag"
 import { TPost } from "../types"
 import Image from "next/image"
-//import Category from "./Category"
-import Cat_Tag from "./CategoryTag"
+import Category from "./Category"
 
 type Props = {
   data: TPost
@@ -21,10 +20,11 @@ const PostCard: React.FC<Props> = ({ data }) => {
           key={data.id}
           className="relative overflow-hidden mb-6 md:mb-8 rounded-2xl bg-white dark:bg-zinc-700 p-3 hover:shadow-lg dark:hover:bg-zinc-800 rounded-2xl cursor-pointer flex items-center gap-3"
         >
-          {data.category &&
-            data.category.map((tag: string, idx: number) => (
-              <Cat_Tag key={idx} tag_id={idx}>{tag}</Cat_Tag>
-            ))}
+          {category && (
+            <Category className="absolute top-4 left-4 z-10">
+              {category}
+            </Category>
+          )}
           {data.thumbnail && (
             <div className="relative w-full pb-[66%] lg:pb-[50%] bg-gray-200 dark:bg-zinc-700 ">
               <Image
