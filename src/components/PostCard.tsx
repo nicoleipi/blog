@@ -12,7 +12,7 @@ type Props = {
 
 const PostCard: React.FC<Props> = ({ data }) => {
   const category = (data.category && data.category?.[0]) || undefined
-  const tag = (data.tag && data.tag?.[0]) || undefined
+  const tags = (data.tag && data.tag?.[0]) || undefined
 
   return (
     <Link href={`/${data.slug}`}>
@@ -78,9 +78,9 @@ const PostCard: React.FC<Props> = ({ data }) => {
               </p>
             </div>
             <div className="flex gap-2">
-              {tag && (
-                <Tag className="absolute top-4 left-4 z-10">
-                  {tag}
+              {tags && (
+                <Tag className="flex flex-nowrap max-w-full overflow-x-auto article-tags gap-2">
+                  {tags}
                 </Tag>
               )}
             </div>
