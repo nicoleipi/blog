@@ -30,7 +30,7 @@ const Tag: React.FC<Props> = ({
 
   const handleClick = (value: string) => {
     if (readOnly) return
-    router.push(`/?category=${value}`)
+    router.push(`/?tag=${value}`)
   }
   return (
     <div

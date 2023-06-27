@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { CONFIG } from "site.config"
 import { formatDate } from "@/src/libs/utils"
-import Tag from "./Tag"
+import Tag from "./Tag2"
 import { TPost } from "../types"
 import Image from "next/image"
 import Category from "./Category"
@@ -12,6 +12,7 @@ type Props = {
 
 const PostCard: React.FC<Props> = ({ data }) => {
   const category = (data.category && data.category?.[0]) || undefined
+  const tag = (data.tag && data.tag?.[0]) || undefined
 
   return (
     <Link href={`/${data.slug}`}>
@@ -77,10 +78,11 @@ const PostCard: React.FC<Props> = ({ data }) => {
               </p>
             </div>
             <div className="flex gap-2">
-              {data.tags &&
-                data.tags.map((tag: string, idx: number) => (
-                  <Tag key={idx} tag_id={idx}>{tag}</Tag>
-                ))}
+              {tag && (
+                <Tag className="absolute top-4 left-4 z-10">
+                  {tag}
+                </Tag>
+              )}
             </div>
           </div>
         </article>
