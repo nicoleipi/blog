@@ -12,7 +12,7 @@ type Props = {
 
 const PostCard: React.FC<Props> = ({ data }) => {
   const category = (data.category && data.category?.[0]) || undefined
-  const tags = (data.tag && data.tag?.[0]) || undefined
+  const tags = (data.tags && data.tags?.[0]) || undefined
 
   return (
     <Link href={`/${data.slug}`}>
