@@ -27,22 +27,12 @@ const PostCard: React.FC<Props> = ({ data }) => {
           )}
           {data.thumbnail && (
             <div className="relative w-full pb-[66%] lg:pb-[50%] bg-gray-200 dark:bg-zinc-700 ">
-              const imgStyle {
-                  //transition: filter .5s ease-in-out;
-                  //-webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-                  filter: grayscale(0%); /* FF 35+ */
-                }
-                
-                const imgStyle:hover {
-                  //-webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-                  filter: grayscale(100%); /* FF 35+ */
-                }
-
-              <imgStyle
+              <Inage
                 src={data.thumbnail}
                 className="object-cover"
                 layout="fill"
                 alt={data.title}
+                style="filter:grayscale(0%) hover:filter:grayscale(100%)"
               />
             </div>
           )}
