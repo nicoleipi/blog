@@ -9,6 +9,7 @@ export type TPost = {
   tags?: string[]
   category?: string[]
   summary?: string
+  quote?: string
   author?: {
     id: string
     name: string

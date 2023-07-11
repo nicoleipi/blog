@@ -76,6 +76,11 @@ const PostCard: React.FC<Props> = ({ data }) => {
                 {data.summary}
               </p>
             </div>
+            <div className="mb-5">
+              <p className="hidden md:block leading-4 text-gray-700 dark:text-gray-300">
+                {data.quote}
+              </p>
+            </div>
             <div className="flex gap-2">
               {data.tags &&
                 data.tags.map((tag: string, idx: number) => (
