@@ -12,17 +12,6 @@ type Props = {
 
 const PostCard: React.FC<Props> = ({ data }) => {
   const category = (data.category && data.category?.[0]) || undefined
-
-  const imageStyle = {
-    img {
-      transition: filter .5s ease-in-out;
-      -webkit-filter: grayscale(100%);
-      filter: grayscale(100%); }
-    img:hover {
-      -webkit-filter: grayscale(0%);
-      filter: grayscale(0%); }
-    }
-  }
   
   return (
     <Link href={`/${data.slug}`}>
@@ -39,6 +28,19 @@ const PostCard: React.FC<Props> = ({ data }) => {
           {data.thumbnail && (
             <div className="relative w-full pb-[66%] lg:pb-[50%] bg-gray-200 dark:bg-zinc-700 ">
               <Image
+                const imageStyle = {
+                  img {
+                    transition: filter .5s ease-in-out;
+                    -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+                    filter: grayscale(100%); /* FF 35+ */
+                  }
+                  
+                  img:hover {
+                    -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+                    filter: grayscale(0%); /* FF 35+ */
+                  }
+                }
+                
                 src={data.thumbnail}
                 className="object-cover"
                 layout="fill"
