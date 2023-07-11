@@ -33,7 +33,7 @@ const PostCard: React.FC<Props> = ({ data }) => {
                 layout="fill"
                 alt={data.title}
                 style={{
-                  borderRadius: "5px"
+                  borderRadius: "10px"
                 }}
               />
             </div>
