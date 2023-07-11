@@ -32,6 +32,9 @@ const PostCard: React.FC<Props> = ({ data }) => {
                 className="object-cover"
                 layout="fill"
                 alt={data.title}
+                style={{
+                  borderRadius: "5px"
+                }}
               />
             </div>
           )}
