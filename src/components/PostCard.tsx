@@ -77,7 +77,7 @@ const PostCard: React.FC<Props> = ({ data }) => {
               </p>
             </div>
             <div className="mb-5">
-              <p className="hidden md:block leading-4 text-gray-700 dark:text-gray-300">
+              <p className="hidden md:block leading-4 italic text-gray-700 dark:text-gray-300">
                 {data.quote}
               </p>
             </div>
