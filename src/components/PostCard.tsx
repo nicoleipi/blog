@@ -17,15 +17,13 @@ const PostCard: React.FC<Props> = ({ data }) => {
     img {
       transition: filter .5s ease-in-out;
       -webkit-filter: grayscale(100%);
-      filter: grayscale(100%);
-    }
-
+      filter: grayscale(100%); }
     img:hover {
       -webkit-filter: grayscale(0%);
-      filter: grayscale(0%);
+      filter: grayscale(0%); }
     }
   }
-
+  
   return (
     <Link href={`/${data.slug}`}>
       <a>
