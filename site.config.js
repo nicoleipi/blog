@@ -2,9 +2,9 @@ const CONFIG = {
   // profile setting (required)
   profile: {
     name: "nigel paczkowski",
-    image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    image: "/avatar.jpg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
     role: "",
-    bio: "",
+    bio: "friend me on goodreads",
     email: "nicole.pi@columbia.edu",
     github: "nicoleipi",
     goodreads: "nicoleipi",
@@ -18,7 +18,7 @@ const CONFIG = {
   // blog setting (required)
   blog: {
     title: "nigel's blog",
-    description: "hope you're having a good time",
+    description: "it's a beautiful day",
     theme: "auto", // ['light', 'dark', 'auto']
   },
 
@@ -54,7 +54,7 @@ const CONFIG = {
     config: {
       repo: "morethanmin/morethan-log",
       "issue-term": "og:title",
-      label: "💬 Utterances",
+      label: "Utterances",
     },
   },
   cusdis: {
