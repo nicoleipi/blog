@@ -33,17 +33,17 @@ const PostCard: React.FC<Props> = ({ data }) => {
               />
             </div>
           )}
-          {category && (
-            <Category className="flex flex-col">
-              {category}
-            </Category>
-          )}
           <div
-            className={["p-4", !data.thumbnail && category ? "pt-14" : ""].join(
+            className={["p-4", !data.thumbnail "pt-14" : ""].join(
               " "
             )}
           >
             <header className="flex flex-col justify-between md:flex-row md:items-baseline">
+              {category && (
+                <Category className="flex flex-col">
+                  {category}
+                </Category>
+              )}
               <h2 className="text-lg md:text-xl font-medium mb-2 cursor-pointer text-black dark:text-gray-100">
                 {data.title}
               </h2>
