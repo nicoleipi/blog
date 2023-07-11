@@ -72,13 +72,13 @@ const PostCard: React.FC<Props> = ({ data }) => {
               </div>
             </div>
             <div className="mb-4">
-              <p className="hidden md:block leading-4 text-gray-700 dark:text-gray-300">
-                {data.summary}
+              <p className="hidden md:block leading-4 italic text-gray-700 dark:text-gray-300">
+                {data.quote}
               </p>
             </div>
             <div className="mb-5">
-              <p className="hidden md:block leading-4 italic text-gray-700 dark:text-gray-300">
-                {data.quote}
+              <p className="hidden md:block leading-4 text-gray-700 dark:text-gray-300">
+                {data.summary}
               </p>
             </div>
             <div className="flex gap-2">
