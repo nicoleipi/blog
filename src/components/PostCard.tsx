@@ -21,7 +21,7 @@ const PostCard: React.FC<Props> = ({ data }) => {
           className="relative overflow-hidden mb-6 md:mb-8 rounded-2xl bg-white dark:bg-zinc-700 p-3 hover:shadow-lg dark:hover:bg-zinc-800 rounded-2xl cursor-pointer flex items-center gap-3"
         >
           {category && (
-            <Category className="absolute top-4 left-4 z-10">
+            <Category className="flex gap-2">
               {category}
             </Category>
           )}
