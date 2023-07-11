@@ -9,12 +9,6 @@ const CONFIG = {
     github: "nicoleipi",
     goodreads: "nicoleipi",
   },
-  projects: [
-    {
-      name: `morethan-log`,
-      href: "https://github.com/morethanmin/morethan-log",
-    },
-  ],
   // blog setting (required)
   blog: {
     title: "nigel's blog",

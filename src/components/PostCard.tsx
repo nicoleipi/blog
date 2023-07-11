@@ -32,10 +32,6 @@ const PostCard: React.FC<Props> = ({ data }) => {
                 className="object-cover"
                 layout="fill"
                 alt={data.title}
-                style={
-                  filter: grayscale(0%)
-                  //hover:filter: grayscale(100%)"
-                }
               />
             </div>
           )}
