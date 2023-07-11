@@ -29,7 +29,7 @@ const PostCard: React.FC<Props> = ({ data }) => {
             <div className="relative w-full pb-[66%] lg:pb-[50%] bg-gray-200 dark:bg-zinc-700 ">
               <Image
                 const imgStyle {
-                  transition: filter .5s ease-in-out;
+                  //transition: filter .5s ease-in-out;
                   -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
                   filter: grayscale(0%); /* FF 35+ */
                 }
