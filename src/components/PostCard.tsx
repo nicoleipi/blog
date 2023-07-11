@@ -38,12 +38,11 @@ const PostCard: React.FC<Props> = ({ data }) => {
                   filter: grayscale(100%); /* FF 35+ */
                 }
 
-              <Image
+              <imgStyle
                 src={data.thumbnail}
                 className="object-cover"
                 layout="fill"
                 alt={data.title}
-                style={imgStyle}
               />
             </div>
           )}
