@@ -20,11 +20,6 @@ const PostCard: React.FC<Props> = ({ data }) => {
           key={data.id}
           className="relative overflow-hidden mb-6 md:mb-8 rounded-2xl bg-white dark:bg-zinc-700 p-3 hover:shadow-lg dark:hover:bg-zinc-800 rounded-2xl cursor-pointer flex items-center gap-3"
         >
-          {category && (
-            <Category className="flex flex-col">
-              {category}
-            </Category>
-          )}
           {data.thumbnail && (
             <div className="relative w-full pb-[66%] lg:pb-[50%] bg-white dark:bg-zinc-700 dark:hover:bg-zinc-800">
               <Image
@@ -37,6 +32,11 @@ const PostCard: React.FC<Props> = ({ data }) => {
                 }}
               />
             </div>
+          )}
+          {category && (
+            <Category className="flex flex-col">
+              {category}
+            </Category>
           )}
           <div
             className={["p-4", !data.thumbnail && category ? "pt-14" : ""].join(
