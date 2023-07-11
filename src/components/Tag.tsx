@@ -24,7 +24,7 @@ const Tag: React.FC<Props> = ({ children, tag_id }) => {
   return (
     <div
       onClick={() => handleClick(children)}
-      className={`text-xs text-gray-800 font-normal rounded-full ${
+      className={`text-xs text-gray-800 font-normal rounded-full align-middle ${
         arrayOfColors[tag_id % arrayOfColors.length]
       } px-2 py-1 cursor-pointer`}
     >
